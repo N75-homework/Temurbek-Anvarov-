@@ -1,13 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+  rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+  rel="stylesheet"
+  />
+  
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            logo: '#244D4D',
+          },
+          
+          fontFamily: {
+            mons: ['Kolker Brush'],
+            de: ['DM Sans'],
+          },
+          maxWidth: {
+            w: '470px',
+            tw: '436px',
+            tw1: '306px',
+            tw2: '271px',
+          },
+          spacing: {
+            btn: '  172px',
+          },
+        },
+      },
+    }
+  </script>
 </head>
 <body>
-    
+  <header>
+    <div class="max-w-7xl px-5 mx-auto pt-11 pb-7">
+      <nav class="flex items-center justify-between">
+        <div>
+          <h2 class="font-bold text-2xl text-logo">
+            DudeShape
+          </h2>
+        </div>
+        <ul class="flex items-center gap-12 text-base">
+          <li>
+            <a class="text-base" href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="text-base" href="#">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="text-base" href="#">
+              Features
+            </a>
+          </li>
+          <li>
+            <a class="text-base" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div class="flex items-center gap-9">
+          <img src="./icon/lupa.svg" alt="#" />
+          <img src="./icon/menu.svg" alt="#" />
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="max-w-7xl mx-auto flex items-center bg-logo">
+        <div>
+          <img class="w-full" src="./img/intor.png" alt="3" />
+        </div>
+        <div>
+          <div class="pl-24">
+            <h1 class="font-bold text-6xl max-w-2xl text-white mb-5">
+              We Help You Make Modern Furniture
+            </h1>
+            <p class="max-w-w mb-9 text-xl text-white leading-6">
+              All of our furniture uses the best materials and choices for our
+              customers.All of our furniture uses the best materials
+            </p>
+            <button
+            class="w-btn bg-white h-14 text-xl text-logo hover:bg-amber-400 ease-in duration-75"
+            >
+            Explore More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--</section> -->
+  <section>
+    <div class="max-w-7xl mx-auto mt-36">
+      <h3 class="text-center mb-10 text-4xl text font-bold text-logo">
+        Trusted by 20,000+ companies
+      </h3>
+      <ul class="flex gap-24 justify-center">
+        <li>
+          <a href="#">
+            <img src="./img/mastercard.png" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/air.png" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/uber.png" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/peypal.png" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/visa.png" alt="#" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/strip.png" alt="#" />
+          </a>
+        </li>
+      </ul>
+      <div class="flex items-center justify-between mt-36">
+        <div>
+          <img src="./img/box1.png" alt="#" />
+        </div>
+        <div>
+          <h4 class="text-logo text-3xl mb-5 font-bold">
+            About Us
+          </h4>
+          <p class="max-w-tw text-xl leading-6 text-gray-600 mb-10">
+            All of our furniture uses the best materials and choices for our
+            customers.All of our furniture uses the best materials
+          </p>
+          <ul class="gap-8">
+            <li class="flex">
+              <img class="mr-10 mb-16" src="./icon/box2.svg" alt="#" />
+              <div>
+                <h5>
+                  Best Quality
+                </h5>
+                <p class="max-w-tw">
+                  All of our furniture uses the best materials and choices
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <img class="mr-10 mb-16" src="./icon/box3.svg" alt="#" />
+              <div>
+                <h5>
+                  100% Secure
+                </h5>
+                <p class="max-w-tw">
+                  All of our furniture uses the best materials and choices
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <img class="mr-10 mb-16" src="./icon/box4.svg" alt="#" />
+              <div>
+                <h5>
+                  Free Shpping
+                </h5>
+                <p class="max-w-tw">
+                  All of our furniture uses the best materials and choices
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 </body>
 </html>
